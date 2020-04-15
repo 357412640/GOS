@@ -1,0 +1,124 @@
+//公共样式
+@minor-font-color: #868E9E;
+.page-common{
+  padding: 20px 20px 38px 20px;
+  box-sizing: border-box;
+  color: #383E4B;
+  .sel-condition{
+    padding-bottom: 20px;
+    .input-base-style{
+      display: inline-block;
+      padding-right: 20px;
+      .common-sel-box{
+        padding-left: 10px;
+        border-radius: 0;
+      }
+    }
+  }
+  .btn-border-none{
+    border: none;
+  }
+  .common-margin-right-5{
+    margin-right: 5px;
+  }
+  .common-margin-bottom-5{
+    margin-bottom: 5px;
+  }
+  .common-margin-right-10{
+    margin-right: 10px;
+  }
+  .common-right-line span{
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 2px;
+      right: -7px;
+      bottom: 2px;
+      left: 0;
+      border-right: 1px solid #ccc;
+    }
+  }
+  .minor-font-color{
+    color: @minor-font-color;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .page-turing{
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+.edit-page{
+  width: 550px;
+  margin: 20px auto;
+}
+div, p, li, ul, input[type="text"], button, span{
+  font-size: 14px;
+  border-radius: 0!important;
+}
+.common-margin-right-20{
+  margin-right: 20px;
+}
+.common-flex{
+  display: flex;
+}
+.common-inline-block{
+  display: inline-block;
+}
+li{
+  list-style: none;
+}
+.common-margin-left-10{
+  margin-left: 15px;
+}
+.common-modal-btn{
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+}
+
+/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+.scrollbar::-webkit-scrollbar{
+  width: 3px;
+}
+/*定义滚动条的轨道，内阴影及圆角*/
+.scrollbar::-webkit-scrollbar-track{
+  border-radius: 3px;
+}
+/*定义滑块，内阴影及圆角*/
+.scrollbar::-webkit-scrollbar-thumb{
+  border-radius: 2px;
+  background-color: #CAD1D7;
+}
+
+  /*定义模态框滚动条样式，适用大页面*/
+.modal-scrollbar::-webkit-scrollbar{
+  width: 5px;
+}
+/*定义滚动条的轨道，内阴影及圆角*/
+.modal-scrollbar::-webkit-scrollbar-track{
+  border-radius: 5px;
+}
+/*定义滑块，内阴影及圆角*/
+.modal-scrollbar::-webkit-scrollbar-thumb{
+  border-radius: 2px;
+  background-color: #CAD1D7;
+}
+
+.button-common{
+  font-size: 14px;
+  border-radius: 0;
+}
+.operate-btn-common.ivu-btn {
+  padding: 0 12px;
+}
+.operate-btn-common.ivu-btn-text:hover {
+  background-color: transparent;
+}
+.operate-btn-common.ivu-btn-text:focus {
+  box-shadow: none;
+}
+.border-right {
+  border-right: 1px solid #e8eaec;
+}

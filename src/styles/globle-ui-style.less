@@ -1,0 +1,204 @@
+@commonHeight: 40px;
+@font-size: 12px;
+@main-color: #2d8cf0;
+@mini-font-color: #E1E4E7;
+.main {
+  .tags-nav {
+    .ivu-tag-dot {
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+      padding: 0 20px;
+      margin: 2px 10px 2px 0;
+    }
+  }
+
+  .btn-con i:before, .close-con i:before {
+    font-weight: bold;
+  }
+
+  .header-wrapper .ivu-btn {
+    font-size: 14px;
+    padding: 8px;
+    width: 90px;
+    height: 40px;
+    border-radius: 0;
+  }
+
+  .ivu-form-item {
+    margin-bottom: 20px;
+  }
+}
+span.ivu-tag-dot-inner, .ivu-radio-inner {
+    border-radius: 50% !important;
+  }
+
+.page-common {
+  .ivu-select-single .ivu-select-selection, .ivu-input,
+  .ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+  .ivu-select-single .ivu-select-selection .ivu-select-selected-value {
+    height: @commonHeight;
+    line-height: @commonHeight;
+  }
+  textarea.ivu-input{
+    height: inherit;
+    line-height: inherit;
+  }
+
+  .search-style {
+    .ivu-btn {
+      height: 40px;
+      width: 90px;
+      font-size: @font-size;
+    }
+  }
+
+  .ivu-table th, .ivu-table th, .ivu-table td {
+    height: 60px;
+  }
+
+  div.el-step__icon.is-text{
+    border-radius: 50% !important;
+  }
+
+  .el-step__head.is-finish {
+    color: #fff;
+    border-color: @main-color;
+    font-weight: normal;
+  }
+
+  .el-step__title.is-finish, .ivu-checkbox-group {
+    color: #383E4B;
+  }
+  .ivu-checkbox-group{
+    border-bottom: none!important;
+  }
+
+  .ivu-checkbox-wrapper,
+  .ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+  .ivu-select-single .ivu-select-selection .ivu-select-selected-value {
+    font-size: 14px;
+  }
+
+  .el-step__head.is-process,
+  .el-step__head.is-wait {
+    color: #fff;
+    border-color: @mini-font-color;
+    font-weight: normal;
+  }
+
+  .el-step__icon.is-text {
+    background-color: @mini-font-color;
+  }
+
+  .el-step__title.is-process, .el-step__title.is-wait {
+    font-weight: normal;
+    color: @mini-font-color;
+  }
+
+  .el-step__head.is-finish .el-step__icon.is-text {
+    background-color: @main-color;
+  }
+
+  .el-step__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ivu-form-item-required .ivu-form-item-label:before {
+    content: '';
+  }
+
+  .ivu-form .ivu-form-item-label {
+    text-align: left;
+    color: #A1A7B5;
+    font-size: 14px;
+  }
+
+  .el-step__main {
+    margin-left: -15px;
+  }
+
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-left: 10px;
+  }
+
+  .page-main-btn {
+    width: 120px;
+    height: 40px;
+    padding: 0;
+  }
+  .el-calendar-table .el-calendar-day{
+    height: 120px;
+  }
+  .el-calendar-table td.is-selected, .el-backtop, .el-calendar-table td.is-today{
+    background-color: #fff;
+    color: #383E4B;
+  }
+  .el-calendar-table .el-calendar-day:hover{
+    background-color: #fff;
+    cursor: auto;
+  }
+  .el-calendar__header{
+    text-align: center;
+    line-height: 60px;
+    padding: 0;
+    display: block;
+    width: 100%;
+    background-color: #F5F7F9;
+    position: relative;
+    .el-calendar__button-group{
+      position: absolute;
+      top: 0;
+      left: calc(~'50% - 80px');
+      .el-button{
+        border: none;
+        background-color: transparent;
+        font-size: 14px;
+      }
+      .el-button:last-child{
+        padding-left: 100px;
+      }
+    }
+    .el-button-group>.el-button:not(:first-child):not(:last-child){
+      display: none;
+    }
+  }
+  .el-calendar__body{
+    padding: 0;
+    .el-calendar-table thead th {
+      padding: 12px 8px;
+      color: #C0C4CC;
+      border-right: 1px solid #EBEEF5;
+    }
+    .el-calendar-table thead th:first-child {
+      border-left: 1px solid #EBEEF5;
+    }
+  }
+  .pop-tip-style{
+    .ivu-poptip-popper[x-placement="top"] .ivu-poptip-arrow{
+      right: 45px;
+      left: auto;
+    }
+    .ivu-poptip-popper[x-placement^="top"]{
+      right: 0;
+      left: auto!important;
+    }
+  }
+}
+.ivu-spin-fix .ivu-spin-dot {
+  border-radius: 50%!important;
+}
+
+.common-page-padding{
+  padding: 30px;
+}
+.ivu-table-wrapper, .ivu-table td, .ivu-table th{
+  border: none;
+}
+.ivu-table:before, .ivu-table:after{
+  height: 0;
+}
